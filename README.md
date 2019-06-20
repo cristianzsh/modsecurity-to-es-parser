@@ -75,3 +75,24 @@ To send the logs, just run the script and pass the logs directory as parameter:
 ```
 $ python3 sendmodseclogs.py -d /path/to/directory/
 ```
+
+Output:
+
+![](prints/terminal.png)
+
+The script will automatically send the logs every ten seconds.
+
+### Viewing logs on Kibana
+
+Create a new index pattern called ```modsecurity_logs```.
+
+
+![](prints/kibana1.png)
+
+Go to the discover menu and select the new index pattern.
+
+![](prints/kibana2.png)
+
+You can also create charts and dashboards to better visualize the data.
+
+![](prints/kibana3.png)
